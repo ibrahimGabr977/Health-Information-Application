@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a1_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creativexs.pcaia.GetStartedActivity"
+    android:background="#131322"
+
+    >
+
+
+
+    <ImageView
+     android:id="@+id/a1ImageView"
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintBottom_toBottomOf="parent"
+     android:scaleType="fitXY"
+     app:layout_constraintDimensionRatio="1:1"
+     app:layout_constraintHeight_percent="0.35"
+     app:layout_constraintVertical_bias="0.13"/>
+
+    <TextView
+        android:id="@+id/a1TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a1ImageView"
+        app:layout_constraintVertical_bias="0.17"
+        />
+    <TextView
+        android:id="@+id/a1TextView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a1TextView1"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.7"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/a1Next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="next"
+        android:onClick="next"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlue"
+        android:background="@android:drawable/list_selector_background"
+        app:layout_constraintVertical_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/a1Skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="skip"
+        android:onClick="skip"
+        android:textSize="17sp"
+        android:textColor="#323353"
+        android:background="@android:drawable/list_selector_background"
+        app:layout_constraintVertical_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/a1Skip_btn"
+        app:layout_constraintEnd_toStartOf="@id/a1Next_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/a1Ball1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/a1_bg_balls"
+            android:layout_marginEnd="4dp"
+            />
+        <TextView
+            android:id="@+id/a1Ball2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/a1_bg_balls"
+            android:layout_marginEnd="4dp"
+            />
+        <TextView
+            android:id="@+id/a1Ball3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/a1_bg_balls"
+            android:layout_marginEnd="4dp"
+            />
+        <TextView
+            android:id="@+id/a1Ball4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/a1_bg_balls"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

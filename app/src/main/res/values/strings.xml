@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pcaia</string>
+    <string name="prevn_title">Precautions</string>
+    <string name="updates">No updates</string>
+    <string name="stats_title">Coming Soon</string>
+    <string name="news_title">News</string>
+    <string name="notif_title">Notifications</string>
+    <string name="foods_title">Foods and immune</string>
+
+    <string name="prevn_help_title">About Precautions</string>
+    <string name="prevn_help_content">Possible precautions may protect you and others from diseases.
+        You can may reduce your chances of being infected or spreading of diseases by taking these simple precautions.
+        \n\nPlease Review Us now for Helping</string>
+
+    <string name="foods_help_title">About Foods and Immune</string>
+    <string name="foods_help_content">There are no magic vitamins or supplements that prevent from all diseases.
+        These foods strengthen your immune at all so these may help strengthen your immune system\'s ability to fight all diseases.
+    \n\nPlease Review Us now for Helping</string>
+
+    <string name="rate_us_title">Like using Pcaia app?</string>
+    <string name="rate_us_content">Recommended us to others by Reviewing us.</string>
+
+
+</resources>

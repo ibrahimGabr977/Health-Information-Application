@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creativexs.pcaia.DisplayActivity"
+    android:background="@color/colorBlack"
+    android:id="@+id/constraintss"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/a2Start_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+    <TextView
+        android:id="@+id/a2Title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/a2Start_guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.04"
+      />
+
+    <TextView
+        android:id="@+id/a2Updates_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/a2Start_guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a2Title_tv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.01"/>
+
+
+  <TextView
+      android:id="@+id/helpTextView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@drawable/help_drawable"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/a2Start_guide"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintWidth_percent="0.06"
+      app:layout_constraintHorizontal_bias="0.91"
+      app:layout_constraintVertical_bias="0.04"
+      android:visibility="invisible"
+      android:clickable="true"
+      android:foreground="?attr/selectableItemBackground"
+      />
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/a2Updates_tv"
+        app:layout_constraintBottom_toTopOf="@id/a2BtvLine_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/a2Start_guide"
+
+        />
+
+    <TextView
+        android:id="@+id/a2BtvLine_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray"
+        app:layout_constraintBottom_toTopOf="@id/btv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorBlack"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:menu="@menu/btvmenu"
+        app:itemIconTint="@color/btv_colors"
+        app:labelVisibilityMode="unlabeled"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintVertical_bias="1"
+        ads:adUnitId="ca-app-pub-9071903693576316/6043633867"
+        android:visibility="gone">
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
